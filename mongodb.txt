@@ -1,0 +1,129 @@
+PS C:\Users\pc\Desktop\workshop> mongo
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("4816e149-2748-4c74-966c-35815da61c09") }
+MongoDB server version: 4.4.2
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+        https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+        https://community.mongodb.com
+---
+The server generated these startup warnings when booting:
+        2020-11-24T23:11:36.561+01:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> mongo --version
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:8
+> ^C
+bye
+PS C:\Users\pc\Desktop\workshop> mongo --version
+MongoDB shell version v4.4.2
+Build Info: {
+    "version": "4.4.2",
+    "gitVersion": "15e73dc5738d2278b688f8929aee605fe4279b0e",
+    "modules": [],
+    "allocator": "tcmalloc",
+    "environment": {
+        "distmod": "windows",
+        "distarch": "x86_64",
+        "target_arch": "x86_64"
+    }
+}
+PS C:\Users\pc\Desktop\workshop> mongo
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("f8c05aa8-47be-4cd2-b439-6963239b51aa") }
+MongoDB server version: 4.4.2
+---
+The server generated these startup warnings when booting:
+        2020-11-24T23:11:36.561+01:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin    0.000GB
+config   0.000GB
+contact  0.000GB
+local    0.000GB
+> use contact
+switched to db contact
+> db.createCollection("lists")
+{
+        "ok" : 0,
+        "errmsg" : "Collection already exists. NS: contact.lists",
+        "code" : 48,
+        "codeName" : "NamespaceExists"
+}
+> db.createCollection("contact lists")
+{ "ok" : 1 }
+> db.lists.insertMany([
+...    { name: "lahmer", first name: "fares", email: fares@gmail.com, age: 15 } },
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):2:27
+>    { name: "kefi", first name: "seif", email: seif@gmail.com, age: 26} },
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:22
+>    {name: fatnassi,first name: "sarra", email: sarra@gmail.com, age: 40  } }
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:22
+> ])
+uncaught exception: SyntaxError: expected expression, got ']' :
+@(shell):1:0
+> db.lists.insertMany([
+...    { name: "lahmer", first name: "fares", email: fares@gmail.com, age: 15 } },
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):2:27
+>    { name: "kefi", first name: "seif", email: seif@gmail.com, age: 26} },
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:22
+>    {name: fatnassi,first name: "sarra", email: sarra@gmail.com, age: 40  } }
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:22
+> ])
+uncaught exception: SyntaxError: expected expression, got ']' :
+@(shell):1:0
+> db.lists.insertMany([
+...    { name: "lahmer", first name: "fares", email: fares@gmail.com, age: 15 } },
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):2:27
+>    { name: "kefi", first name: "seif", email: seif@gmail.com, age: 26} },
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:22
+>    {name: fatnassi,first name: "sarra", email: sarra@gmail.com, age: 40  } }
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:22
+> ])
+uncaught exception: SyntaxError: expected expression, got ']' :
+@(shell):1:0
+> db.lists.insertMany([    { name: "lahmer", first name: "fares", email: fares@gmail.com, age: 15 } },
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:49
+> db.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fardb.lists.insertMany([{name:"lahmar",first name:"feres",email:""fares@gmail.com",age:15},{name:"kefi",firstname:"seif",email:kefi@gmail.com
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:42
+> db.lists.insertOne([{name:"jawher",first name:"hajri",age:24}])
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:41
+> db.lists.insertMany([
